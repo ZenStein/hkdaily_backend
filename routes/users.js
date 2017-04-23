@@ -276,7 +276,7 @@ function (req, res) {
     var contactsFile = fs.readFileSync(req.files[2].path, 'utf8')//, contactsToDB)
     var activeFile = fs.readFileSync(req.files[1].path, 'utf8')//, mergeActiveToContacts)
     var posFile = fs.readFileSync(req.files[0].path, 'utf8')//, parsePointOfSale)
-    //AO = arrayOfObjects
+    //AO stands for arrayOfObjects
     var contactsAO = getContacts(null, contactsFile)
     var activeAO = getActives(null, activeFile)
     var posAO = getPOS(null, posFile)
